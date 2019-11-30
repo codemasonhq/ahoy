@@ -1,0 +1,17 @@
+/vendor
+/node_modules
+.env
+.idea/*
+avatars/
+supervisord.log
+supervisord.pid
+/public/build
+/public/js/*.map
+/public/css/*.map
+/packages/*
+/storage/data/*
+/storage/debugbar/*
+/resources/assets/sass/tonic
+oauth-private.key
+oauth-public.key
+

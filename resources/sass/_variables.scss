@@ -1,0 +1,41 @@
+// Brand 
+$brand-color: #96c1ff;
+$brand-hue: 203 !default;
+
+// Grays
+$white: #fff !default;
+$gray-100: hsl($brand-hue, 10%, 96%) !default;
+$gray-200: hsl($brand-hue, 10%, 88%) !default;
+$gray-300: hsl($brand-hue, 10%, 80%) !default;
+$gray-400: hsl($brand-hue, 10%, 72%) !default;
+$gray-500: hsl($brand-hue, 10%, 64%) !default;
+$gray-600: hsl($brand-hue, 10%, 56%) !default;
+$gray-700: hsl($brand-hue, 10%, 48%) !default;
+$gray-800: hsl($brand-hue, 10%, 40%) !default;
+$gray-900: hsl($brand-hue, 10%, 32%) !default;
+$black: hsl($brand-hue, 10%, 24%) !default;
+
+// Body
+$body-color: $gray-400;
+$body-bg: rgb(42, 49, 60);
+
+// Typography
+$font-family-sans-serif: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+$font-size-base: 0.9rem;
+$font-weight-base: 500;
+$line-height-base: 1.6;
+$h1-font-size: 2.5rem;
+$headings-font-weight: bolder;
+
+
+// Headings
+$headings-color: $white;
+
+// Navbar
+$navbar-dark-brand-color: $brand-color;
+$navbar-dark-color: rgba($white, .85) !default;
+$navbar-dark-hover-color: rgba($white, .75) !default;
+
+// Cards
+$card-bg: #404956; 
+$card-color: $gray-200; 

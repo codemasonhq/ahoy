@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- ahoyworld.dev -->
+    <title>Ahoy - Simple Docker development environments</title>
+
+    <!-- Scripts -->
+    <script src="js/app.js" defer></script>
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css' rel='stylesheet' type='text/css'>
+
+    <!-- Styles -->
+    <link href="css/app.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark shadow-sm pt-4">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                Ahoy 
+                <div class="beta-flag">
+                    <span class="badge badge-dark">beta</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Left Side Of Navbar -->
+                <ul class="navbar-nav mr-auto">
+
+                </ul>
+
+                <!-- Right Side Of Navbar -->
+                <ul class="navbar-nav ml-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/codemasonhq/ahoy-cli">GitHub</a>
+                    </li>
+                    <li class="nav-item text-center ml-4">
+                        <a class="nav-link" href="https://codemason.io">
+                            <small style="letter-spacing: 0.02rem;">Brought to you by</small>
+                            <div class="text-white" style="margin-top: -5px;">Codemason</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="py-4">
+        <div class="container">
+            <!-- Hero -->
+            <div class="row hero justify-content-center align-items-center pt-5 pb-3">
+                <div class="col-md-8 py-4 text-center">
+                    <h1>Docker development environments</h1>
+                    <p>
+                        Automatically create Docker environments for the languages you love with a single command.
+                        It's the quickest and easiest way to jump into Docker.
+                    </p>
+
+                    <div class="terminal mt-5">
+                        <div class="bar">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <pre class="term-window"><code class="term-content"><span class="line-comment"># Install Ahoy CLI</span>
+<span class="prompt">$</span> <span class="line-input">npm install -g @codemason/ahoy</span>
+
+<span class="line-comment"># Generate your Docker files</span>
+<span class="prompt">$</span> <span class="line-input">ahoy install php</span>
+Crafting <span class="line-green">php</span> application with <span class="line-green">php</span>
+<span class="line-gray">... Wrote Dockerfile</span>
+<span class="line-gray">... Wrote docker-compose.yml</span>
+<span class="line-gray">... Wrote .gitlab-ci.yml</span>
+
+<span class="line-comment"># Start and enjoy!</span>
+<span class="prompt">$</span> <span class="line-input">docker-compose up -d</span>
+Starting project_web_1 ... <span class="line-green">done</span></code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Supported Languages & Frameworks -->
+            <div class="row mb-5 justify-content-center">
+                <div class="col-md-7 text-center">
+                    <div class="card card-lang">
+                        <div class="card-body">
+                            PHP
+                        </div>
+                    </div>
+                    <div class="card card-lang">
+                        <div class="card-body">
+                            Laravel
+                        </div>
+                    </div>
+                    <div class="card card-lang">
+                        <div class="card-body">
+                            Static Sites
+                        </div>
+                    </div>
+                    <div class="card card-lang">
+                        <div class="card-body">
+                            Node.js
+                        </div>
+                    </div>
+                    <div class="card card-lang">
+                        <div class="card-body">
+                            Rails
+                        </div>
+                    </div>
+                    <div class="card card-lang">
+                        <div class="card-body">
+                            Bedrock for Wordpress
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- How it works -->
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 class="py-4">How it works</h2>
+                </div>
+            </div>
+
+            <div class="row how-it-works justify-content-center">
+                <div class="col-md-4">
+                    <div class="card text-white mb-3">
+                        <div class="card-body text-center">
+                            <div class="icon d-flex justify-content-center">
+                                <div class="align-self-center"><i class="fas fa-terminal"></i></div>
+                            </div>
+                            <h5 class="card-title">You run the craft command</h5>
+                            <p>Choose the Ahoy that matches the language or framework your project is using and run the craft command.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-white mb-3">
+                        <div class="card-body text-center">
+                            <div class="icon d-flex justify-content-center">
+                                <div class="align-self-center"><i class="fas fa-file-alt"></i></div>
+                            </div>
+                            <h5 class="card-title">We generate the files you need</h5>
+                            <p>Each language pack lives in a git repo. We fetch it and use it to generate the files your app needs for Docker.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-white mb-3">
+                        <div class="card-body text-center">
+                            <div class="icon d-flex justify-content-center">
+                                <div class="align-self-center"><i class="fas fa-gem"></i></div>
+                            </div>
+                            <h5 class="card-title">Run your Docker environment</h5>
+                            <p>You've got all the files you need, all that's left is to spin up your new Docker development environment.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row how-it-works-description justify-content-center mt-5">
+                <div class="col-md-6">
+                    <h5 class="mb-2">A little more about Ahoy...</h5>
+                    <p>Ahoy is an open source tool for preparing simple and lightweight Docker environments for your app.</p>
+                    <p>It's sensibly opinionated so you can get you up and running as quickly as possible. You don't even need to know Docker to get started.<p>
+                    <p>
+                        When you install a language pack, Ahoy will fetch the corresponding git repository. 
+                        Contained in the repo is everything required to create fully functional Docker files for that language or framework. 
+                    </p>
+                    <p>
+                        Since everything is hosted in git repos, contributing your own language packs is incredibly easy and can great way to help other developers save a lot of time!</p>
+                    <p>
+                    <p>
+                        Ahoy is special because it's designed to be lightweight and built with deployment in mind.
+                        We won't bog you down with more than you need and you'll be able to extend with advanced functionality with ease when required.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Features -->
+            <div class="row mt-4">
+                <div class="col-md-12 text-center">
+                    <h2 class="py-4">What's included</h2>
+                </div>
+            </div>
+
+            <div class="row features">
+                <div class="col-md-6">
+                    <div class="feature">
+                        <div class="icon"><i class="far fa-clock"></i></div>
+                        <h5>Simple, premade Docker environments.</h5>
+                        <p>Piecing together outdated answers and guides is super frustrating. Use a Ahoy to skip all that hassle. Yeah, sure you could do it yourself but is it worth the time?</p>
+                    </div>
+                    <div class="feature">
+                        <div class="icon"><i class="fas fa-bath"></i></div>
+                        <h5>Clean and well structured Dockerfiles.</h5>
+                        <p>You don't have to worry about "am I doing this right?", that's already been worried about. You'll get three squeaky clean new files in your project root. That's it :)</p>
+                    </div>
+                    <div class="feature">
+                        <div class="icon"><i class="fas fa-code-branch"></i></div>
+                        <h5>Easily create new custom packs.</h5>
+                        <p>You can create custom packs for any language or framework you want. It's a great way to help fellow developers get their dev environments up and running quickly so they can get to building faster.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="feature">
+                        <div class="icon"><i class="fas fa-award"></i></div>
+                        <h5>Use Docker first, learn it later.</h5>
+                        <p>Tell your imposter syndrome to shut up because you've got something else, something rarer. You've got productivity syndrome! With your dev environment up and running, you'll be cranking code in no time.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="icon"><i class="far fa-lightbulb"></i></div>
+                        <h5>Avoid reinventing the wheel, again.</h5>
+                        <p>Hundreds of developers have already spent hours building out Docker environments for your language/framework. There's no point being the 999th dev to also spend hours creating a Docker dev environment.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="icon"><i class="fas fa-chess"></i></div>
+                        <h5>Easily switch default services.</h5>
+                        <p>
+                            Kits always come locked and loaded with great defaults for whichever language/framework you're using. Most packs will also come with alternative services you can use that might suit you better. 
+                       </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Credit -->
+            <div class="row mt-5 pt-5 mb-3 justify-content-center">
+                <div class="col-md-7 mt-4">
+                    <a href="https://codemason.io" class="card card-promo text-white">
+                        <div class="card-body d-flex">
+                            <div class="mr-3">
+                                <img src="img/codemason.svg">
+                            </div>
+                            <div class="align-self-center w-100">
+                                <h5 class="mb-1">Ready to deploy your Docker app?</h5>
+                                <p class="mb-0">
+                                    Deploy with Codemason. We'll save you hours of frustration.
+                                    Ahoy's work perfectly with Codemason, you'll love it!
+                                </p>
+                            </div>
+                            <div class="align-self-center ml-3">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="row mt-5">
+                <div class="col-md-12 text-center">
+                    &copy; Codemason
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
