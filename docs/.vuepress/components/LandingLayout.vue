@@ -112,6 +112,9 @@
             <div class="row how-it-works-description justify-content-center mt-5">
                 <div class="col-md-6">
                     <Content class="theme-default-content custom" />
+                    <div class="text-center mt-4">
+                        <button class="btn btn-secondary align-self-center">{{ data.docsText }}</button>
+                    </div>
                 </div>
             </div>
 

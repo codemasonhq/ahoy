@@ -2,16 +2,16 @@
 home: true
 layout: LandingLayout
 heroText: Docker development environments
-tagline: Fully functional Docker development environments for the languages and frameworks you love. Plus super easy local trusted SSL certificates. 
+tagline: Ready to use Docker development environments for the languages and frameworks you love. Plus super easy local trusted SSL certificates. 
  
 highlightsText: How it works
 highlights:
 - icon: fas fa-terminal
-  title: You run the craft command
-  description: Choose the Ahoy that matches the language or framework your project is using and run the craft command.
+  title: You run the install command
+  description: Choose the language pack that's right for your project. Quickly add it to any project with the install command.
 - icon: fas fa-file-alt
   title: We generate the files you need
-  description: Each language pack lives in a git repo. We fetch it and use it to generate the files your app needs for Docker.
+  description: Ahoy will generate all the Docker and Docker Compose files required to run a development environment for your project.
 - icon: fas fa-gem
   title: Run your Docker environment
   description: You've got all the files you need, all that's left is to spin up your new Docker development environment.
@@ -48,6 +48,7 @@ features:
   
 
 footer: MIT Licensed | Copyright © Codemason
+docsText: View Documentation
 ---
 
 ##### A little more about Ahoy...
@@ -66,5 +67,7 @@ They simply contain the templates for creating the Docker files needed to
 run the language/framework and any related services an app like yours might need.
 
 That's it. No super secret sauce, just a collection of templates (aka language packs) 
-to save you from doing it manually.
+to save you from doing it manually. 
+
+It's like Hello World for Docker & Docker Compose.
 

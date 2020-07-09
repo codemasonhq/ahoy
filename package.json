@@ -1,27 +1,24 @@
 {
-  "name": "ahoy",
-  "version": "1.0.0",
-  "devDependencies": {
-    "bootstrap": "^4.3.1",
-    "cross-env": "^5.2.1",
-    "laravel-mix": "^4.1.4",
-    "resolve-url-loader": "^3.1.0",
-    "sass": "^1.22.12",
-    "sass-loader": "^7.3.1",
-    "vue-template-compiler": "^2.6.10",
-    "vuepress": "^1.2.0"
-  },
-  "keywords": [],
-  "license": "ISC",
+  "name": "Ahoy",
+  "version": "0.0.1",
+  "description": "Simple Docker development environments.",
   "main": "index.js",
+  "authors": {
+    "name": "Ben",
+    "email": "ben@codemason.io"
+  },
+  "repository": "https://github.com/codemasonhq/ahoy/Ahoy",
   "scripts": {
-    "dev": "npm run development",
-    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "docs:build": "vuepress build public/docs",
-    "docs:dev": "vuepress dev public/docs",
-    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "prod": "npm run production",
-    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "watch": "npm run development -- --watch"
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.3.1",
+    "@vuepress/plugin-back-to-top": "^1.3.1",
+    "@vuepress/plugin-medium-zoom": "^1.3.1",
+    "bootstrap": "^4.5.0",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^9.0.1"
   }
 }
