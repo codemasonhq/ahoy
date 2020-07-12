@@ -176,13 +176,15 @@ your `web` service, the hostname is the name of the Elasticsearch container (by 
 
 With Elasticsearch installed you will be able to use it as a driver for [Laravel Scout](https://laravel.com/docs/scout)  
 
-## Using Dusk
+## Using Dusk 
 
-Ahoy will let you quickly start using Laravel Dusk.
+Ahoy will let you quickly start running Laravel Dusk tests by giving you a ready to use Selenium service.
 
-Add the Dusk service to your projects Docker Compose file by selecting the `dusk` service provided by the language pack.
+With [Laravel Dusk installed](https://laravel.com/docs/dusk#installation) on your project, you can add the Dusk service to your 
+projects Docker Compose file by selecting the `dusk` service provided by the language pack.
+
 This will install a service that runs Selenium.
-  
+
 ```
  $ ahoy install laravel --with="php,mariadb,dusk"
  
@@ -194,10 +196,15 @@ This will install a service that runs Selenium.
  $ docker-compose up
  ```
 
-Selenium will be accessible on  `http://localhost:4444/wd/hub`
+The Selenium instance which Dusk runs on will be accessible via your browser at `http://localhost:4444/wd/hub`
 
-Once you have [installed Laravel Dusk](https://laravel.com/docs/dusk#installation), you will be able to run your Dusk tests
- 
+Remember for Dusk to access your Selenium instance, you'll need to set the `REMOTE_WEB_DRIVER` env var to `http://dusk:4444/wd/hub`
+
+You will now be able to run your Dusk tests
+
 ```
-$ php artisan dusk
+$ docker-compose run --rm web php artisan dusk
 ```
+
+
+[Learn more about Laravel Dusk](https://laravel.com/docs/dusk)
