@@ -15,7 +15,7 @@ Available options
 - [`horizon`](#run-horizon)
 - [`redis`](#using-redis)
 - [`elasticsearch`](#using-elasticsearch)
-- [`dusk`](using-dusk)
+- [`dusk`](#using-dusk)
 
 
 ## Run PHP (Laravel & Artisan Commands)
